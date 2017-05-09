@@ -61,7 +61,7 @@
   });
 
   proto.send = function (strData) {
-    var cmd = [0xF0, 0x04, 0x22, 0x01, 0x04 /*Address*/ ];
+    var cmd = [0xF0, 0x04, 0x22, 0x01, this._address /*Address*/ ];
     cmd = cmd.concat(toASCII(strData));
     cmd.push(0xF7);
     this._board.send(cmd);
@@ -75,7 +75,7 @@
       self._callbackAckOK = ackOK;
       self._callbackAckErr = ackErr;
     }
-    var cmd = [0xF0, 0x04, 0x22, 0x02, 0x04 /*Address*/ ];
+    var cmd = [0xF0, 0x04, 0x22, 0x02, this._address /*Address*/ ];
     cmd = cmd.concat(toASCII(strData));
     cmd.push(0xF7);
     this._board.send(cmd);
