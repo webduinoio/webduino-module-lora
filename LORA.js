@@ -51,7 +51,6 @@
         }
         sending = false;
       });
-    startQueue(board);
   }
 
   LORA.prototype = proto = Object.create(Module.prototype, {
@@ -85,7 +84,7 @@
     if (arguments.length == 1) {
       self._callbackRecvAckOK = ackOK;
     }
-    var cmd = [0xF0, 0x04, 0x22, 0x04, 0x04 /*Address*/ , 0xF7];
+    var cmd = [0xF0, 0x04, 0x22, 0x04, this._address /*Address*/ , 0xF7];
     this._board.send(cmd);
   }
 
@@ -95,23 +94,6 @@
       data.push(str.charCodeAt(i));
     }
     return data;
-  }
-
-  function startQueue(board) {
-    setInterval(function () {
-      if (sending || sendArray.length == 0) {
-        return;
-      }
-      sending = true;
-      var sendObj = sendArray.shift();
-      sendAck = sendObj.ack;
-      if (sendAck > 0) {
-        board.send(sendObj.obj);
-      } else {
-        sending = false;
-        sendCallback();
-      }
-    }, 0);
   }
 
   scope.module.LORA = LORA;
