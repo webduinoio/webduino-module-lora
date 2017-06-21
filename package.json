@@ -1,8 +1,8 @@
 {
-  "name": "webduino-module-ws2812",
+  "name": "webduino-module-lora",
   "version": "1.0.0",
-  "description": "WS2812 Module for Webduino",
-  "main": "WS2812.js",
+  "description": "Lora Module for Webduino",
+  "main": "LORA.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +11,7 @@
   "keywords": [
     "arduino",
     "webduino",
-    "ws2812"
+    "lora"
   ],
   "dependencies": {
     "webduino-js": "0.x"
