@@ -1,7 +1,6 @@
-// LCD1602
-Blockly.Msg.WEBDUINO_LCD1602 = "LCD (1602)，SDA ";
-Blockly.Msg.WEBDUINO_LCD1602_SCL = "  SCL";
-Blockly.Msg.WEBDUINO_LCD1602_PRINT = "LCD Print:";
-Blockly.Msg.WEBDUINO_LCD1602_CLEAR = "Clear LCD Screen";
-Blockly.Msg.WEBDUINO_LCD1602_LOCATE_X = "LCD Col:";
-Blockly.Msg.WEBDUINO_LCD1602_LOCATE_Y = "LCD Row:";
+// LoRa
+Blockly.Msg.WEBDUINO_LORA_SEND_STRING = "Send string";
+Blockly.Msg.WEBDUINO_LORA_SUCCESS_CALLBACK = "Do ... after success";
+Blockly.Msg.WEBDUINO_LORA_FAIL_CALLBACK = "Do ... after failure";
+Blockly.Msg.WEBDUINO_LORA_RECEIVE_CALLBACK = "Do ... after receiving string";
+Blockly.Msg.WEBDUINO_LORA_RECEIVED_STRING = "Redeived string";

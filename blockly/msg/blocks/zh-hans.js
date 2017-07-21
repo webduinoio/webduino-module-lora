@@ -1,7 +1,6 @@
-// LCD1602
-Blockly.Msg.WEBDUINO_LCD1602 = "LCD (1602)，SDA ";
-Blockly.Msg.WEBDUINO_LCD1602_SCL = "  SCL";
-Blockly.Msg.WEBDUINO_LCD1602_PRINT = "LCD 显示:";
-Blockly.Msg.WEBDUINO_LCD1602_CLEAR = "清除 LCD 萤幕";
-Blockly.Msg.WEBDUINO_LCD1602_LOCATE_X = "LCD 设定列:";
-Blockly.Msg.WEBDUINO_LCD1602_LOCATE_Y = "LCD 设定栏:";
+// LoRa
+Blockly.Msg.WEBDUINO_LORA_SEND_STRING = "传送字串";
+Blockly.Msg.WEBDUINO_LORA_SUCCESS_CALLBACK = "成功后执行";
+Blockly.Msg.WEBDUINO_LORA_FAIL_CALLBACK = "失败后执行";
+Blockly.Msg.WEBDUINO_LORA_RECEIVE_CALLBACK = "接收字串后执行";
+Blockly.Msg.WEBDUINO_LORA_RECEIVED_STRING = "接收的字串";

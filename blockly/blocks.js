@@ -18,7 +18,7 @@ Blockly.Blocks['lora_send'] = {
     this.appendValueInput("data")
         .setCheck(null)
         .appendField(new Blockly.FieldVariable("lora"), "lora")
-        .appendField("傳送字串");
+        .appendField(Blockly.Msg.WEBDUINO_LORA_SEND_STRING);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(65);
@@ -33,13 +33,13 @@ Blockly.Blocks['lora_send_ack'] = {
     this.appendValueInput("data")
         .setCheck(null)
         .appendField(new Blockly.FieldVariable("lora"), "lora")
-        .appendField("傳送字串");
+        .appendField(Blockly.Msg.WEBDUINO_LORA_SEND_STRING);
     this.appendStatementInput("send_ok")
         .setCheck(null)
-        .appendField("成功後執行");
+        .appendField(Blockly.Msg.WEBDUINO_LORA_SUCCESS_CALLBACK);
     this.appendStatementInput("send_failure")
         .setCheck(null)
-        .appendField("失敗後執行");
+        .appendField(Blockly.Msg.WEBDUINO_LORA_FAIL_CALLBACK);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(65);
@@ -54,7 +54,7 @@ Blockly.Blocks['lora_recv_ack'] = {
     this.appendStatementInput("recv_ok")
         .setCheck(null)
         .appendField(new Blockly.FieldVariable("lora"), "lora")
-        .appendField("接收字串後執行");
+        .appendField(Blockly.Msg.WEBDUINO_LORA_RECEIVE_CALLBACK);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(65);
@@ -68,7 +68,7 @@ Blockly.Blocks['lora_recv_data'] = {
   init: function() {
     this.appendDummyInput()
         .appendField(new Blockly.FieldVariable("lora"), "lora")
-        .appendField("接收的字串");
+        .appendField(Blockly.Msg.WEBDUINO_LORA_RECEIVED_STRING);
     this.setOutput(true, null);
     this.setColour(65);
     this.setTooltip('');
