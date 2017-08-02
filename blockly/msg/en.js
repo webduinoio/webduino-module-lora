@@ -1,1 +1,1 @@
-MSG.catLORA = "LORA_1276";
+MSG.catLORA = "LORA";

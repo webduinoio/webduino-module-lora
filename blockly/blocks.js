@@ -2,9 +2,9 @@
 Blockly.Blocks['lora_new'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("LORA , Reset Pin")
+        .appendField("LORA , Reset")
         .appendField(new Blockly.FieldDropdown([["0", "0"], ["1", "1"], ["2", "2"], ["3", "3"], ["4", "4"], ["5", "5"], ["6", "6"], ["7", "7"], ["8", "8"], ["9", "9"], ["15", "15"]]), "resetPin")
-        .appendField(" , Address:")
+        .appendField(" Address")
         .appendField(new Blockly.FieldDropdown([["0", "0"], ["1", "1"], ["2", "2"], ["3", "3"], ["4", "4"], ["5", "5"], ["6", "6"], ["7", "7"], ["8", "8"], ["9", "9"], ["15", "15"]]), "address");
     this.setOutput(true, null);
     this.setColour(230);
@@ -36,10 +36,12 @@ Blockly.Blocks['lora_send_ack'] = {
         .appendField(Blockly.Msg.WEBDUINO_LORA_SEND_STRING);
     this.appendStatementInput("send_ok")
         .setCheck(null)
-        .appendField(Blockly.Msg.WEBDUINO_LORA_SUCCESS_CALLBACK);
+        .appendField(Blockly.Msg.WEBDUINO_LORA_SUCCESS_CALLBACK)
+        .setAlign(Blockly.ALIGN_RIGHT);
     this.appendStatementInput("send_failure")
         .setCheck(null)
-        .appendField(Blockly.Msg.WEBDUINO_LORA_FAIL_CALLBACK);
+        .appendField(Blockly.Msg.WEBDUINO_LORA_FAIL_CALLBACK)
+        .setAlign(Blockly.ALIGN_RIGHT);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(65);
@@ -70,7 +72,7 @@ Blockly.Blocks['lora_recv_data'] = {
         .appendField(new Blockly.FieldVariable("lora"), "lora")
         .appendField(Blockly.Msg.WEBDUINO_LORA_RECEIVED_STRING);
     this.setOutput(true, null);
-    this.setColour(65);
+    this.setColour(35);
     this.setTooltip('');
     this.setHelpUrl('http://webduino.io/');
   }
