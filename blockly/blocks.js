@@ -1,4 +1,7 @@
 //https://blockly-demo.appspot.com/static/demos/blockfactory_old/index.html#5ag74x
+var mainUrl = 'https://tutorials.webduino.io/zh-tw/docs/';
+var utmUrl = '?utm_source=cloud-blockly&utm_campaign=help_url';
+
 Blockly.Blocks['lora_new'] = {
   init: function() {
     this.appendDummyInput()
@@ -9,7 +12,7 @@ Blockly.Blocks['lora_new'] = {
     this.setOutput(true, null);
     this.setColour(230);
     this.setTooltip('');
-    this.setHelpUrl('http://webduino.io/');
+    this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl); 
   }
 };
 
@@ -23,7 +26,7 @@ Blockly.Blocks['lora_send'] = {
     this.setNextStatement(true, null);
     this.setColour(65);
     this.setTooltip('');
-    this.setHelpUrl('http://webduino.io/');
+    this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl); 
   }
 };
 
@@ -46,7 +49,7 @@ Blockly.Blocks['lora_send_ack'] = {
     this.setNextStatement(true, null);
     this.setColour(65);
     this.setTooltip('');
-    this.setHelpUrl('http://webduino.io/');
+    this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl); 
   }
 };
 
@@ -61,7 +64,7 @@ Blockly.Blocks['lora_recv_ack'] = {
     this.setNextStatement(true, null);
     this.setColour(65);
     this.setTooltip('');
-    this.setHelpUrl('http://webduino.io/');
+    this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl); 
   }
 };
 
@@ -74,6 +77,6 @@ Blockly.Blocks['lora_recv_data'] = {
     this.setOutput(true, null);
     this.setColour(35);
     this.setTooltip('');
-    this.setHelpUrl('http://webduino.io/');
+    this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl); 
   }
 };
