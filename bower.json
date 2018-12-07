@@ -3,7 +3,7 @@
   "description": "Lora Module for Webduino",
   "main": "LORA.js",
   "authors": "",
-  "license": "ISC",
+  "license": "MIT",
   "keywords": [
     "arduino",
     "webduino",
