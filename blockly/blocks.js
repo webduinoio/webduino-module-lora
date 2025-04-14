@@ -12,7 +12,7 @@ Blockly.Blocks['lora_new'] = {
     this.setOutput(true, null);
     this.setColour(230);
     this.setTooltip('');
-    this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl); 
+    this.setHelpUrl('');
   }
 };
 
@@ -26,7 +26,7 @@ Blockly.Blocks['lora_send'] = {
     this.setNextStatement(true, null);
     this.setColour(65);
     this.setTooltip('');
-    this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl); 
+    this.setHelpUrl('');
   }
 };
 
@@ -49,7 +49,7 @@ Blockly.Blocks['lora_send_ack'] = {
     this.setNextStatement(true, null);
     this.setColour(65);
     this.setTooltip('');
-    this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl); 
+    this.setHelpUrl('');
   }
 };
 
@@ -64,7 +64,7 @@ Blockly.Blocks['lora_recv_ack'] = {
     this.setNextStatement(true, null);
     this.setColour(65);
     this.setTooltip('');
-    this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl); 
+    this.setHelpUrl('');
   }
 };
 
@@ -77,6 +77,6 @@ Blockly.Blocks['lora_recv_data'] = {
     this.setOutput(true, null);
     this.setColour(35);
     this.setTooltip('');
-    this.setHelpUrl(mainUrl + 'basic/index.html' + utmUrl); 
+    this.setHelpUrl('');
   }
 };
